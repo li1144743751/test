@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+</style>
+
+<body>
+    <span class="aa"> 
+   正确
+    </span>
+</body>
+<script>
+   
+
+function a1(a,b){
+    this.a = a
+    this.b = b
+
+ }
+ a1.prototype.fun = function(){
+    console.log('123');
+ }
+
+ function a2(a,b,c){
+    a1.call(this,a,b)
+    this.c = c的发射点发射点 
+ }
+
+ a2.prototype.ccc = function(){
+    console.log('456222');
+ }
+ const a = new a2(1,2,3)
+console.log(a2);
+ console.log(a);
+
+
+ 
+ </script>
+</html>
